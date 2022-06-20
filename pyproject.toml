@@ -24,9 +24,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/philiprehberger/py-diff-strings"
+Homepage = "https://github.com/philiprehberger/py-diff-strings#readme"
 Repository = "https://github.com/philiprehberger/py-diff-strings"
 Issues = "https://github.com/philiprehberger/py-diff-strings/issues"
+Changelog = "https://github.com/philiprehberger/py-diff-strings/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/philiprehberger_diff_strings"]

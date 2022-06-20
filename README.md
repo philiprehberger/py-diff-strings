@@ -6,7 +6,7 @@
 
 Show character-level differences between two strings with colored terminal output.
 
-## Install
+## Installation
 
 ```bash
 pip install philiprehberger-diff-strings
