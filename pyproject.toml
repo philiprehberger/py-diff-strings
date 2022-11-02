@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-diff-strings"
-version = "0.2.0"
+version = "0.2.1"
 description = "Show character-level differences between two strings with colored terminal output"
 readme = "README.md"
 license = "MIT"
@@ -31,3 +31,9 @@ Changelog = "https://github.com/philiprehberger/py-diff-strings/blob/main/CHANGE
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/philiprehberger_diff_strings"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
