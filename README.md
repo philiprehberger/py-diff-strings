@@ -2,8 +2,7 @@
 
 [![Tests](https://github.com/philiprehberger/py-diff-strings/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/py-diff-strings/actions/workflows/publish.yml)
 [![PyPI version](https://img.shields.io/pypi/v/philiprehberger-diff-strings.svg)](https://pypi.org/project/philiprehberger-diff-strings/)
-[![License](https://img.shields.io/github/license/philiprehberger/py-diff-strings)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/py-diff-strings)](https://github.com/philiprehberger/py-diff-strings/commits/main)
 
 Show character-level differences between two strings with colored terminal output.
 
@@ -154,7 +153,6 @@ assert_strings_equal("expected", "actual")  # raises AssertionError with diff
 | `changes` | `int` | Number of replacement operations |
 | `similarity` | `float` | Similarity ratio between 0.0 and 1.0 |
 
-
 ## Development
 
 ```bash
@@ -162,6 +160,24 @@ pip install -e .
 python -m pytest tests/ -v
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/py-diff-strings)
+
+🐛 [Report issues](https://github.com/philiprehberger/py-diff-strings/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/py-diff-strings/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
