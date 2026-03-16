@@ -1,5 +1,9 @@
 # philiprehberger-diff-strings
 
+[![Tests](https://github.com/philiprehberger/py-diff-strings/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/py-diff-strings/actions/workflows/publish.yml)
+[![PyPI version](https://img.shields.io/pypi/v/philiprehberger-diff-strings.svg)](https://pypi.org/project/philiprehberger-diff-strings/)
+[![License](https://img.shields.io/github/license/philiprehberger/py-diff-strings)](LICENSE)
+
 Show character-level differences between two strings with colored terminal output.
 
 ## Install
