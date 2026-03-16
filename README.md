@@ -85,6 +85,14 @@ assert_strings_equal("expected", "actual")  # raises AssertionError with diff
 | `Delete(text)` | `text: str` | Text removed from the first string |
 | `Replace(old, new)` | `old: str`, `new: str` | Text that changed between strings |
 
+
+## Development
+
+```bash
+pip install -e .
+python -m pytest tests/ -v
+```
+
 ## License
 
 MIT
