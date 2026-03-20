@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-diff-strings"
-version = "0.2.1"
+version = "0.2.2"
 description = "Show character-level differences between two strings with colored terminal output"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [{ name = "Philip Rehberger" }]
-keywords = ["diff", "string", "compare", "character", "terminal", "color"]
+keywords = ["diff", "string", "compare", "character", "terminal"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
