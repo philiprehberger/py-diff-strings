@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "philiprehberger-diff-strings"
-version = "0.2.3"
-description = "Show character-level differences between two strings with colored terminal output"
+version = "0.3.0"
+description = "Show character-level differences between two strings with colored terminal output."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"

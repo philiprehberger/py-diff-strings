@@ -20,6 +20,7 @@ __all__ = [
     "line_diff",
     "diff_summary",
     "html_diff",
+    "markdown_diff",
     "patch",
     "similarity",
     "assert_strings_equal",
@@ -349,6 +350,34 @@ def html_diff(a: str, b: str) -> str:
         elif isinstance(change, Replace):
             parts.append(f"<del>{_html_mod.escape(change.old)}</del>")
             parts.append(f"<ins>{_html_mod.escape(change.new)}</ins>")
+    return "".join(parts)
+
+
+def markdown_diff(a: str, b: str) -> str:
+    """Character-level diff rendered as Markdown.
+
+    Insertions are wrapped in ``**bold**``, deletions in ``~~strikethrough~~``.
+    Suitable for inline display in PR comments, issue bodies, or chat
+    messages where ANSI colors and HTML are not rendered.
+
+    Args:
+        a: The original string.
+        b: The modified string.
+
+    Returns:
+        A Markdown-formatted string.
+    """
+    changes = char_diff(a, b)
+    parts: list[str] = []
+    for change in changes:
+        if isinstance(change, Match):
+            parts.append(change.text)
+        elif isinstance(change, Insert):
+            parts.append(f"**{change.text}**")
+        elif isinstance(change, Delete):
+            parts.append(f"~~{change.text}~~")
+        elif isinstance(change, Replace):
+            parts.append(f"~~{change.old}~~**{change.new}**")
     return "".join(parts)
 
 

@@ -1,15 +1,25 @@
 # Changelog
 
+## 0.3.0 (2026-04-28)
+
+- Add `markdown_diff(a, b)` — character-level diff rendered as Markdown using `**bold**` for insertions and `~~strikethrough~~` for deletions, suitable for PR comments and chat messages
+- Replace import-only test with comprehensive test suite covering all public functions
+- Fix `pyproject.toml` description to end with a period (matches README)
+- Reformat malformed CHANGELOG headings from earlier releases
+
 ## 0.2.3 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section
 - Update CI checkout action to v5 for Node.js 24 compatibility
 - Add GitHub issue templates, dependabot config, and PR template
+
 ## 0.2.2
 
 - Trim keywords to match pyproject template guide
 
-## 0.2.1- Add pytest and mypy tool configuration to pyproject.toml
+## 0.2.1
+
+- Add pytest and mypy tool configuration to pyproject.toml
 
 ## 0.2.0 (2026-03-16)
 

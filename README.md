@@ -84,6 +84,17 @@ result = html_diff("the cat", "the bat")
 # 'the <del>c</del><ins>b</ins>at'
 ```
 
+### Markdown diff
+
+For PR comments, issue bodies, or chat messages — render the diff using Markdown formatting (`**bold**` insertions, `~~strikethrough~~` deletions):
+
+```python
+from philiprehberger_diff_strings import markdown_diff
+
+print(markdown_diff("the cat sat", "the bat sat"))
+# 'the ~~c~~**b**at sat'
+```
+
 ### Custom colors
 
 ```python
@@ -131,6 +142,7 @@ assert_strings_equal("expected", "actual")  # raises AssertionError with diff
 | `line_diff(a, b, *, color=True, context=3)` | Unified-style line-level diff |
 | `diff_summary(a, b)` | Summary with addition/deletion/change counts and similarity |
 | `html_diff(a, b)` | Character-level diff as HTML with `<ins>`/`<del>` tags |
+| `markdown_diff(a, b)` | Character-level diff as Markdown (`**bold**` for inserts, `~~strikethrough~~` for deletes) |
 | `patch(original, changes)` | Reconstruct the modified string from a change list |
 | `similarity(a, b)` | Similarity ratio between 0.0 and 1.0 |
 | `assert_strings_equal(expected, actual, *, msg="")` | Assert equal or raise with diff |
